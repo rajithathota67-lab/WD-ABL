@@ -1,0 +1,223 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #10101a;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color: #191929;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid #00e5ff;
+}
+
+header h1 {
+    color: #00e5ff;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #00e5ff;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(#0009, #0009),
+    url("https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+.hero h2 {
+    color: #00e5ff;
+    font-size: 45px;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px #00e5ff;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #00e5ff;
+    color: #10101a;
+    padding: 13px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background-color: #ff00ff;
+    color: white;
+}
+
+/* Sections */
+section {
+    padding: 50px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #00e5ff;
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+/* Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: #1d1d32;
+    width: 280px;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #343454;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: #00e5ff;
+    box-shadow: 0 0 20px #00e5ff66;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #ff00ff;
+    margin: 15px 0;
+}
+
+.card p {
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.card span {
+    color: #00e5ff;
+    font-weight: bold;
+}
+
+/* Tables */
+.table-container {
+    max-width: 950px;
+    margin: auto;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1d1d32;
+}
+
+th, td {
+    padding: 16px;
+    text-align: center;
+    border: 1px solid #44445f;
+}
+
+th {
+    background-color: #00a8c6;
+    color: #10101a;
+}
+
+tr:hover {
+    background-color: #343454;
+}
+
+/* Player Cards */
+.player {
+    border-top: 4px solid #ff00ff;
+}
+
+.player h3 {
+    font-size: 25px;
+    color: #00e5ff;
+}
+
+/* Footer */
+footer {
+    background-color: #191929;
+    border-top: 2px solid #00e5ff;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer h2 {
+    color: #00e5ff;
+    margin-bottom: 12px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 14px;
+    }
+}

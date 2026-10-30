@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Paradise Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>🍽 Food Paradise</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#chefs">Chefs</a>
+            <a href="#about">Ambience</a>
+            <a href="#reviews">Reviews</a>
+            <a href="#reservation">Reservation</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section class="hero" id="home">
+        <h2>Welcome to Food Paradise</h2>
+        <p>Delicious Food, Beautiful Moments!</p>
+        <a href="#menu" class="btn">Explore Our Menu</a>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu">
+        <h2>Our Special Menu</h2>
+
+        <div class="container">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?w=500" alt="Pizza">
+                <h3>Italian Pizza</h3>
+                <p>Fresh cheese, vegetables and delicious toppings.</p>
+                <h4>₹250</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=500" alt="Burger">
+                <h3>Cheese Burger</h3>
+                <p>Fresh vegetables with tasty cheese and sauces.</p>
+                <h4>₹150</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=500" alt="Soup">
+                <h3>Vegetable Soup</h3>
+                <p>Fresh vegetables with delicious spices.</p>
+                <h4>₹120</h4>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=500" alt="Restaurant food">
+                <h3>Special Thali</h3>
+                <p>A delicious combination of traditional dishes.</p>
+                <h4>₹200</h4>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Chef Profiles -->
+    <section id="chefs">
+        <h2>Meet Our Chefs</h2>
+
+        <div class="container">
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?w=500" alt="Head chef">
+                <h3>Chef Rahul</h3>
+                <p>Head Chef - Italian Cuisine</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?w=500" alt="Chef">
+                <h3>Chef Priya</h3>
+                <p>Specialist - Indian Cuisine</p>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1574966739987-65e38e9f7d5c?w=500" alt="Chef">
+                <h3>Chef Arjun</h3>
+                <p>Specialist - Desserts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Restaurant Ambience -->
+    <section id="about">
+        <h2>Our Restaurant Ambience</h2>
+        <div class="ambience">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700" alt="Restaurant interior">
+            <p>
+                Food Paradise offers a beautiful and comfortable dining
+                environment. Enjoy delicious food with family and friends
+                in a peaceful atmosphere.
+            </p>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="reviews">
+        <h2>Customer Testimonials</h2>
+
+        <div class="container">
+            <div class="card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"Amazing food and excellent service. I loved the atmosphere!"</p>
+                <h4>- Ananya</h4>
+            </div>
+
+            <div class="card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"The food was delicious and the staff were very friendly."</p>
+                <h4>- Rahul</h4>
+            </div>
+
+            <div class="card">
+                <h3>⭐⭐⭐⭐⭐</h3>
+                <p>"A wonderful place to enjoy meals with family."</p>
+                <h4>- Priya</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Opening Hours and Location -->
+    <section id="location">
+        <h2>Opening Hours & Location</h2>
+
+        <div class="info">
+            <h3>🕒 Opening Hours</h3>
+            <p>Monday - Friday: 10:00 AM - 10:00 PM</p>
+            <p>Saturday - Sunday: 9:00 AM - 11:00 PM</p>
+
+            <h3>📍 Restaurant Location</h3>
+            <p>Food Paradise Restaurant, Vijayawada, Andhra Pradesh.</p>
+            <p>Contact: +91 98765 43210</p>
+        </div>
+    </section>
+
+    <!-- Reservation Form -->
+    <section id="reservation">
+        <h2>Book Your Table</h2>
+
+        <form>
+            <label>Full Name</label>
+            <input type="text" placeholder="Enter your name" required>
+
+            <label>Email Address</label>
+            <input type="email" placeholder="Enter your email" required>
+
+            <label>Phone Number</label>
+            <input type="tel" placeholder="Enter phone number" required>
+
+            <label>Reservation Date</label>
+            <input type="date" required>
+
+            <label>Reservation Time</label>
+            <input type="time" required>
+
+            <label>Number of Guests</label>
+            <select required>
+                <option value="">Select Guests</option>
+                <option>1 Person</option>
+                <option>2 People</option>
+                <option>3 People</option>
+                <option>4 People</option>
+                <option>5 or More</option>
+            </select>
+
+            <button type="submit">Reserve Now</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Food Paradise Restaurant</h3>
+        <p>Good Food | Good Mood | Great Memories</p>
+        <p>© 2026 Food Paradise. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

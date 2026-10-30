@@ -1,0 +1,179 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f8e9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #2e7d32;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffeb3b;
+}
+
+/* Home */
+.hero {
+    background: linear-gradient(#0006, #0006),
+    url("https://images.unsplash.com/photo-1490645935967-10de6ba17061?w=1200");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 110px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background-color: #ff9800;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: #e65100;
+}
+
+/* Sections */
+section {
+    padding: 45px 20px;
+}
+
+section h2 {
+    text-align: center;
+    color: #2e7d32;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+/* Cards */
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.card {
+    background-color: white;
+    width: 300px;
+    padding: 18px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px #0002;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 18px #0003;
+}
+
+.card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card h3 {
+    color: #388e3c;
+    margin: 15px 0;
+}
+
+.card p {
+    margin: 10px 0;
+    line-height: 1.5;
+}
+
+/* Tips */
+.tips {
+    max-width: 700px;
+    margin: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #0002;
+}
+
+.tips p {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    font-size: 17px;
+}
+
+/* Footer */
+footer {
+    background-color: #1b5e20;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
